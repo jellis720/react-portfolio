@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 export default class BaseLayout extends Component {
   render(){
@@ -10,24 +10,25 @@ export default class BaseLayout extends Component {
             <div className="navbar-fixed-top">
               <ul className="navbar-nav">
                 <li className="nav-link">
-                  <Link to="/">Josh Ellis</Link>
+                  <NavLink to="/" className="navText">Josh Ellis</NavLink>
                 </li>
                 <li className="nav-link">
-                  <Link to="/about">Get to Know Me</Link>
+                  <NavLink to="/About" className="navText">Get to Know Me</NavLink>
                 </li>
                 <li className="nav-link">
-                  <Link to="/portfolio">My Work</Link>
+                  <NavLink to="/Portfolio" className="navText">My Work</NavLink>
+                </li>
+                <li className="nav-link">
+                  <NavLink to="/Contact" className="navText">Reach Out</NavLink>
+                </li>
+                <li className="nav-link">
+                  <NavLink to="/References" className="navText">Proof</NavLink>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
         {this.props.children}
-        <footer className="navbar-fixed-bottom">
-        <a href="https://github.com/jellis720" class="btn-link">GitHub</a>
-        <a href="https://www.facebook.com/joshrellis" class="btn-link">Facebook</a>
-        <a href="https://www.instagram.com/whysojellis" class="btn-link">Instagram</a>
-        </footer>
       </div>
     );
   }

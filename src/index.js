@@ -9,13 +9,17 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import App from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Contact from'./components/Contact';
+import References from './components/References'
 
 ReactDOM.render(
   <BrowserRouter>
       <Switch>
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/about" component={About} />
-        <Route path="/" component={App}/>
+        <Route exact path="/" component={App}/>
+        <Route path="/Portfolio" component={Portfolio}/>
+        <Route path="/About" component={About}/>
+        <Route path="/Contact" component={Contact}/>
+        <Route path="/References" component={References}/>
       </Switch>
     </BrowserRouter>
 
