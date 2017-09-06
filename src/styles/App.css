@@ -1,0 +1,59 @@
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-fixed-top{
+    width: 100%;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top:50px;
+}
+
+a{
+  margin: 0 30px;
+  text-decoration: none;
+  color: limegreen
+}
+
+a:hover{
+  text-decoration: none;
+  color: limegreen;
+  font-weight: bold;
+}
+
+.jumbotron{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: limegreen;
+}
+
+.pageName{
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 100px
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+}
+
+.innerContent{
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  color: gray;
+}
+
+img{
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 100px;
+  margin: 20px
+}
