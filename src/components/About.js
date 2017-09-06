@@ -8,7 +8,6 @@ export default class About extends Component {
       <BaseLayout>
       <div className="jumbotron title-md">
           <h1 className="pageName">Get to Know Me!</h1>
-
       </div>
       <div className="content">
         <div className="innerContent">
